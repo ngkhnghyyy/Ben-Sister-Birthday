@@ -301,7 +301,7 @@ class World {
                 (buffer) => {
                     this.sound.setBuffer(buffer);
                     this.sound.setLoop(false);
-                    this.sound.setVolume(0.5);
+                    this.sound.setVolume(1);
                     this.sound.play();
                     this.analyser = new THREE.AudioAnalyser(this.sound, 32);
                     // get the average frequency of the sound

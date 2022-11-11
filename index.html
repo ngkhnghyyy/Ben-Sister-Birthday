@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HAPPY BIRTHDAY CHỊ BEN 17/11/2022</title>
-    <link rel="icon" type="image/png" href="https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-6/269734449_655010578834432_761043078133529454_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6MfzzMtDso8AX-H0JDO&_nc_ht=scontent.fsgn3-1.fna&oh=00_AfDE7P3D2WgkBP2n9e_PcDLcOwJSwWlQB-57_IxYM30UXw&oe=63723625">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<canvas class="webgl"></canvas>
-<div>
-    <h1 style="font-family:'Courier New', Courier, monospace; font-size:2em; color:#CD104D; font-weight:bold;">
-        HAPPY BIRTHDAY
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-6/269734449_655010578834432_761043078133529454_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6MfzzMtDso8AX-H0JDO&_nc_ht=scontent.fsgn3-1.fna&oh=00_AfDE7P3D2WgkBP2n9e_PcDLcOwJSwWlQB-57_IxYM30UXw&oe=63723625"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    </h1>
-    <h1 style="font-family:'Courier New', Courier, monospace; font-size:1.5em; padding:2.3em;color:#FDFDBD;">
+  <body>
+    <canvas class="webgl"></canvas>
+    <div>
+      <h1
+        style="
+          font-family: 'Roboto Mono', sans-serif;
+          font-size: 2em;
+          color: #cd104d;
+          font-weight: bold;
+        "
+      >
+        HAPPY BIRTHDAY
+      </h1>
+      <h1
+        style="
+          font-family: 'Roboto Mono', sans-serif;
+          font-size: 1.5em;
+          padding: 2.3em;
+          color: #fdfdbd;
+          font-weight: italic;
+        "
+      >
         Chị Ngân Ben mãi đỉnkkk
-    </h1>
-    
-</div>
-<button id="play-music" type="button" aria-label="Play music"><svg fill="currentColor" viewBox="0 0 512 512" width="100" title="music">
-    <!-- <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z" /> -->
-</svg > 
-<h2 style="font-family:'Courier New', Courier, monospace;font-size:1em; justify-content:center"> Click here! </h2>
-</button>
-<script type="x-shader/x-vertex" id="vertexShader">
+      </h1>
+    </div>
+    <button id="play-music" type="button" aria-label="Play music">
+      <svg fill="currentColor" viewBox="0 0 512 512" width="100" title="music">
+        <!-- <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z" /> -->
+      </svg>
+      <h2
+        style="
+          font-family: 'Roboto Mono', sans-serif;
+          font-size: 1em;
+          justify-content: center;
+        "
+      >
+        Click here!
+      </h2>
+    </button>
+    <script type="x-shader/x-vertex" id="vertexShader">
         #define M_PI 3.1415926535897932384626433832795
       uniform float uTime;
       uniform float uSize;
@@ -55,9 +88,9 @@
         vColor = aColor;
         vUv = uv;
       }
-      </script>
+    </script>
 
-<script type="x-shader/x-fragment" id="fragmentShader">
+    <script type="x-shader/x-fragment" id="fragmentShader">
         varying vec3 vColor;
       varying vec2 vUv;
 
@@ -69,8 +102,8 @@
         strength = 1.0 - strength;
         gl_FragColor = vec4(strength * color, 1.0);
       }
-      </script>
-<script type="x-shader/x-vertex" id="vertexShader1">
+    </script>
+    <script type="x-shader/x-vertex" id="vertexShader1">
         #define M_PI 3.1415926535897932384626433832795
 
 
@@ -98,9 +131,9 @@
         vColor = aColor;
         vUv = uv;
       }
-      </script>
+    </script>
 
-<script type="x-shader/x-fragment" id="fragmentShader1">
+    <script type="x-shader/x-fragment" id="fragmentShader1">
         uniform sampler2D uTex;
       varying vec3 vColor;
       varying vec2 vUv;
@@ -114,8 +147,7 @@
         vec3 texture = texture2D(uTex, uv).rgb;
         gl_FragColor = vec4(texture * color * (strength + .3), 1.);
       }
-      </script>
-
-</body>
-<script type="module" src="index.js"></script>
+    </script>
+  </body>
+  <script type="module" src="index.js"></script>
 </html>
